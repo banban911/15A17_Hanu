@@ -292,6 +292,9 @@ img {
 }
 
 @media (max-width: 393px) {
+  body {
+    font-size: 12px;
+  }
   .upcoming_event {
     -webkit-box-shadow: none;
             box-shadow: none;

@@ -294,6 +294,9 @@ img {
 }
 
 @media (max-width: 393px) {
+  body {
+    font-size: 12px;
+  }
   .upcoming_event {
     box-shadow: none;
   }

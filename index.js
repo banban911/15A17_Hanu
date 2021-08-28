@@ -31,13 +31,16 @@ const moment = $(".carousel");
 //     counter = 1;
 //   }
 // }
+function slider() {
+  let counter = momentItem.length;
+  setInterval(() => {
+    if (counter < momentItem.length - 1) {
+      counter++;
+    } else {
+      counter = 0;
+    }
+    moment.style.transform = `translateX(${counter * -100}%)`;
+  }, 5000);
+}
 
-let counter = 0;
-setInterval(() => {
-  if (counter < momentItem.length - 1) {
-    counter++;
-  } else {
-    counter = 0;
-  }
-  moment.style.transform = `translateX(${counter * -100}%)`;
-}, 5000);
+slider();
